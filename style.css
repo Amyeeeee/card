@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    font-family: 'Alegreya', sans-serif;
+}
+
+body {
+    background: rgb(235, 182, 199);
+}
+
+/* card1*/
+.card {
+    background: white;
+    padding: 2rem;
+    /*gives space around the whole text*/
+    border: 1px solid #777;
+    border-radius: .25rem;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.card-body {
+    font-size: .9rem;
+}
+
+.card-footer {
+    margin-top: 1rem;
+}
+
+.btn {
+    --color: hsl(325, 48%, 57%);
+    background-color: var(--color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: .5em .75em;
+    /*em is used in buttons for better scaling when the font size is changed*/
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: hsl(325, 70%, 68%);
+}
+
+.btn.btn-outline {
+    background: none;
+    border: 1px solid var(--color);
+    color: var(--color);
+}
+
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+    background: hsl(325, 70%, 90%);
+}
+
+/*card2*/
+
+.card.card-shadow {
+    border: none;
+    margin-top: 1.5%;
+    /* shadow for right= positive, s for left= negative, s for down= pos, shadow for up= neg*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4);
+}
